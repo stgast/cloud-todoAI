@@ -92,19 +92,6 @@ System jest przygotowany do wdrożenia w środowisku chmurowym (Railway).
 
 ---
 
-## 🤖 Wykorzystanie AI
-
-W projekcie wykorzystano narzędzia sztucznej inteligencji do:
-
-* generowania fragmentów kodu
-* wspomagania projektowania architektury
-* debugowania aplikacji
-* optymalizacji rozwiązań
-
-AI pełni rolę wsparcia, natomiast wszystkie decyzje i implementacja są weryfikowane przez zespół.
-
----
-
 <img width="1221" height="571" alt="image" src="https://github.com/user-attachments/assets/265852b7-820c-4a4a-9096-ab60f51e0216" />
 
 Diagram przedstawia architekturę mikroserwisową.
