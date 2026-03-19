@@ -114,10 +114,14 @@ Komunikacja między serwisami odbywa się za pomocą REST API.
 
 ---
 
+
 ## 📊 Opis rozwiązania
 
 System został zaprojektowany w sposób skalowalny i modułowy.
 Każdy mikroserwis posiada własną logikę biznesową i może być rozwijany niezależnie.
 
 Architektura umożliwia łatwe wdrożenie aplikacji w środowisku chmurowym (Railway).
+
+<img width="472" height="405" alt="image" src="https://github.com/user-attachments/assets/feb256e5-5fbc-4567-a11b-fdb1c227385f" />
+
 
