@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Booking App</title>
+</head>
+<body>
+
+<h2>Create User</h2>
+<input id="name" placeholder="Name">
+<input id="email" placeholder="Email">
+<button onclick="createUser()">Create User</button>
+
+<h2>Create Booking</h2>
+<input id="userId" placeholder="User ID">
+<input id="serviceId" placeholder="Service ID">
+<input id="date" placeholder="Date YYYY-MM-DD">
+<input id="time" placeholder="Time HH:MM">
+<button onclick="createBooking()">Create Booking</button>
+
+<h2>All Bookings</h2>
+<button onclick="loadBookings()">Load Bookings</button>
+<pre id="bookings"></pre>
+
+<script>
+function createUser() {
+    fetch('http://localhost:8081/users', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({
+            name: document.getElementById('name').value,
+            email: document.getElementById('email').value
+        })
+    }).then(r => r.json()).then(data => alert("User created ID = " + data.id));
+}
+
+function createBooking() {
+    fetch('http://localhost:8080/bookings', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({
+            userId: document.getElementById('userId').value,
+            serviceId: document.getElementById('serviceId').value,
+            date: document.getElementById('date').value,
+            time: document.getElementById('time').value
+        })
+    }).then(r => r.json()).then(data => alert("Booking created ID = " + data.id));
+}
+
+function loadBookings() {
+    fetch('http://localhost:8080/bookings')
+    .then(r => r.json())
+    .then(data => {
+        document.getElementById('bookings').innerText = JSON.stringify(data, null, 2);
+    });
+}
+</script>
+
+</body>
+</html>

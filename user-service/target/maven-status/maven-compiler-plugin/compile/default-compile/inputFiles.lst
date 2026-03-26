@@ -1,5 +1,11 @@
-C:\Users\vdi-terminal\cloud-todoAI\user-service\src\main\java\com\example\user\SecurityConfig.java
-C:\Users\vdi-terminal\cloud-todoAI\user-service\src\main\java\com\example\user\User.java
-C:\Users\vdi-terminal\cloud-todoAI\user-service\src\main\java\com\example\user\UserApplication.java
-C:\Users\vdi-terminal\cloud-todoAI\user-service\src\main\java\com\example\user\UserController.java
-C:\Users\vdi-terminal\cloud-todoAI\user-service\src\main\java\com\example\user\UserRepository.java
+c:\Users\vdi-terminal\cloud-todoAI\user-service\src\main\java\com\example\user\config\SecurityConfig.java
+c:\Users\vdi-terminal\cloud-todoAI\user-service\src\main\java\com\example\user\controller\UserController.java
+c:\Users\vdi-terminal\cloud-todoAI\user-service\src\main\java\com\example\user\dto\LoginRequest.java
+c:\Users\vdi-terminal\cloud-todoAI\user-service\src\main\java\com\example\user\dto\LoginResponse.java
+c:\Users\vdi-terminal\cloud-todoAI\user-service\src\main\java\com\example\user\dto\RegisterRequest.java
+c:\Users\vdi-terminal\cloud-todoAI\user-service\src\main\java\com\example\user\dto\UserDTO.java
+c:\Users\vdi-terminal\cloud-todoAI\user-service\src\main\java\com\example\user\entity\User.java
+c:\Users\vdi-terminal\cloud-todoAI\user-service\src\main\java\com\example\user\repository\UserRepository.java
+c:\Users\vdi-terminal\cloud-todoAI\user-service\src\main\java\com\example\user\security\JwtTokenProvider.java
+c:\Users\vdi-terminal\cloud-todoAI\user-service\src\main\java\com\example\user\service\UserService.java
+c:\Users\vdi-terminal\cloud-todoAI\user-service\src\main\java\com\example\user\UserApplication.java

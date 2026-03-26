@@ -1,0 +1,24 @@
+{
+  "name": "react-tailwind-app",
+  "version": "1.0.0",
+  "description": "A React application styled with Tailwind CSS",
+  "main": "src/main.jsx",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "dependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "tailwindcss": "^2.0.0"
+  },
+  "devDependencies": {
+    "vite": "^2.0.0",
+    "postcss": "^8.0.0",
+    "autoprefixer": "^10.0.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
