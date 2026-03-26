@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bookings</title>
+</head>
+<body>
+<h1>Bookings</h1>
+
+<input id="userId" placeholder="User ID">
+<input id="serviceId" placeholder="Service ID">
+<input id="date" placeholder="Date">
+<input id="time" placeholder="Time">
+<button onclick="createBooking()">Create Booking</button>
+
+<h2>All Bookings</h2>
+<ul id="bookings"></ul>
+
+<script>
+const API = "http://localhost:8080/bookings";
+
+function loadBookings() {
+    fetch(API)
+        .then(res => res.json())
+        .then(data => {
+            const list = document.getElementById("bookings");
+            list.innerHTML = "";
+            data.forEach(b => {
+                const li = document.createElement("li");
+                li.innerText = "ID:" + b.id + 
+                               " User:" + b.userId + 
+                               " Service:" + b.serviceId + 
+                               " Date:" + b.date + 
+                               " Time:" + b.time;
+                list.appendChild(li);
+            });
+        });
+}
+
+function createBooking() {
+    const userId = document.getElementById("userId").value;
+    const serviceId = document.getElementById("serviceId").value;
+    const date = document.getElementById("date").value;
+    const time = document.getElementById("time").value;
+
+    fetch(API, {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({ userId, serviceId, date, time })
+    })
+    .then(() => loadBookings());
+}
+
+loadBookings();
+</script>
+
+</body>
+</html>

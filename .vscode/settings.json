@@ -1,0 +1,7 @@
+{
+  "java.project.sourcePaths": [
+    "booking-service/src/main/java",
+    "user-service/src/main/java"
+  ],
+  "java.project.outputPath": "bin"
+}
